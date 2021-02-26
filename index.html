@@ -1,21 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <title>Francesco Cretti</title>
+
+    <!-- meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
     <link rel="icon" type="image/png" href="/images/favicon.png">
+
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/src/style.css">
+
     <!-- Load the Paper.js library -->
     <script type="text/javascript" src="/js/lib/paper-full.js" async></script>
+
     <!-- Load external PaperScript and associate it with myCanvas -->
-    <script type="text/paperscript" src="/js/src/paper-app.js" canvas="paperCanvas" async></script>
-    <title>Francesco Cretti</title>
+    <!-- <script type="text/paperscript" src="/js/src/paper-app.js" canvas="paperCanvas" async></script> -->
+
   </head>
   <body>
-    <h1>Francesco</h1>
-    <h2>asdasd</h2>
-    <canvas id="paperCanvas" width="900" height="900"></canvas>
+
+    <div id="weather-intro" class="px-3 text-center">
+      <h1>What's the weather like today?</h1>
+      <!-- row 1 -->
+      <div class="row mt-5">
+        <!-- sunny -->
+        <div class="col-6 col-md-3 text-center">
+          <img class="weather-icon" src="/img/sunny.svg" alt="Sunny" data-weather="sunny">
+        </div>
+        <!-- cloudy -->
+        <div class="col-6 col-md-3 text-center">
+          <img class="weather-icon" src="/img/cloudy.svg" alt="Cloudy" data-weather="cloudy">
+        </div>
+        <!-- overcast -->
+        <div class="col-6 col-md-3 text-center">
+          <img class="weather-icon" src="/img/overcast.svg" alt="Overcast" data-weather="overcast">
+        </div>
+        <!-- rain -->
+        <div class="col-6 col-md-3 text-center">
+          <img class="weather-icon" src="/img/rain.svg" alt="Rainy" data-weather="rainy">
+        </div>
+      </div>
+
+      <!-- row 2 -->
+      <div class="row mt-md-3">
+        <!-- storm -->
+        <div class="col-6 col-md-4 text-center">
+          <img class="weather-icon" src="/img/storm.svg" alt="Storm" data-weather="storm">
+        </div>
+        <!-- snow -->
+        <div class="col-6 col-md-4 text-center">
+          <img class="weather-icon" src="/img/snow.svg" alt="Snow" data-weather="snow">
+        </div>
+        <!-- windy -->
+        <div class="col-6 col-md-4 text-center">
+          <img class="weather-icon" src="/img/windy.svg" alt="Windy" data-weather="windy">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TODO: add credits "Weather icons by Flatart from the Noun Project" -->
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Francesco</h1>
+          <h2>asdasd</h2>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <canvas id="paperCanvas" width="900" height="900"></canvas> -->
+
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+    <script src="/js/lib/bootstrap.bundle.min.js"></script>
+
+    <script src="/js/lib/tone.min.js"></script>
+    <script src="/js/src/app.js"></script>
+
   </body>
 </html>
