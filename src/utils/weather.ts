@@ -12,7 +12,6 @@ type FetchWeatherParams = {
 export const fetchCityWeather = async (options?: FetchWeatherParams): Promise<FetchWeatherResponse> => {
   try {
     const city = options?.city ?? "Turin"
-    console.log('fetch')
     const res = await fetch(` http://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${city}`);
     const data = await res.json();
     return { data };
