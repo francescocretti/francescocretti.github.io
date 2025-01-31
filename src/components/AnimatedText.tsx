@@ -60,7 +60,6 @@ const AnimatedText = ({
         animate={controls}
         variants={{
           visible: { transition: { staggerChildren } },
-          hidden: {},
         }}
         aria-hidden
       >
